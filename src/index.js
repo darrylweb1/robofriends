@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './containers/App.js';
+import Card from './components/Card.js'
+import Cardlist from './components/Cardlist.js'
 import reportWebVitals from './reportWebVitals';
+import { robots } from './robots.js';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
